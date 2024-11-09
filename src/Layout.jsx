@@ -1,8 +1,8 @@
-import React from 'react';
-import { Outlet } from 'react-router-dom';
-import Dashboard_navbar from '../components/Dashboard_navbar';
-import '../static/Layout.css'; 
-import Dashboard_header from '../components/Dashboard_header';
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Dashboard_navbar from "../components/Dashboard_navbar";
+import "../static/Layout.css";
+import Dashboard_header from "../components/Dashboard_header";
 
 function Layout() {
   return (
@@ -11,11 +11,13 @@ function Layout() {
         <Dashboard_navbar />
       </div>
       <div className="outlet-container">
-      <Dashboard_header/>
+        <Dashboard_header />
         <Outlet />
       </div>
     </div>
   );
 }
+
+// Hello Check
 
 export default Layout;
